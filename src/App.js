@@ -92,9 +92,9 @@ export default function App() {
   const [activeCaseStudy, setActiveCaseStudy] = useState(null);
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 selection:text-blue-900">
+    <div className="min-h-screen bg-slate-900 text-white font-sans selection:bg-blue-100 selection:text-blue-900">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+      <header className="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center text-white font-bold text-xl">IH</div>
@@ -120,11 +120,11 @@ export default function App() {
           <span className="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-xs font-bold tracking-widest uppercase rounded-full mb-6">
             Portfolio Update 2026
           </span>
-          <h2 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 mb-8 leading-[1.1]">
+          <h2 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.1]">
             Experience Architecture <br/>
-            <span className="text-slate-400">for the ESG System of Record.</span>
+            <span className="text-slate-300">for the ESG System of Record.</span>
           </h2>
-          <p className="text-xl md:text-2xl text-slate-600 max-w-2xl leading-relaxed">
+          <p className="text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed">
             I build the conceptual frameworks that turn massive data complexity into coherent, 
             defensible, and AI-ready enterprise systems.
           </p>
@@ -134,7 +134,7 @@ export default function App() {
       {/* Main Work Grid */}
       <main id="work" className="px-6 pb-32">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-3 mb-12 border-b border-slate-100 pb-4">
+          <div className="flex items-center gap-3 mb-12 border-b border-slate-800 pb-4">
             <Layers className="w-5 h-5 text-blue-600" />
             <h3 className="font-bold text-xl">Experience Architecture Library</h3>
           </div>
@@ -158,9 +158,9 @@ export default function App() {
                   
                   <div className="grid grid-cols-1 gap-6 pt-4">
                     {study.sections.map((s, idx) => (
-                      <div key={idx} className="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                      <div key={idx} className="bg-slate-800 p-6 rounded-xl border border-slate-700">
                         <span className="text-[10px] uppercase tracking-widest font-bold text-slate-400 block mb-2">{s.heading}</span>
-                        <p className="text-sm text-slate-700 leading-relaxed italic">"{s.content}"</p>
+                        <p className="text-sm text-slate-300 leading-relaxed italic">"{s.content}"</p>
                       </div>
                     ))}
                   </div>
@@ -176,7 +176,7 @@ export default function App() {
       </main>
 
       {/* Older Work Section */}
-      <section id="older" className="bg-slate-50 py-32 px-6">
+      <section id="older" className="bg-slate-800 py-32 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16">
             <h3 className="text-3xl font-bold mb-4">Older Work</h3>
@@ -185,7 +185,7 @@ export default function App() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {OLDER_WORK.map((work, i) => (
-              <div key={i} className="bg-white p-8 rounded-2xl border border-slate-200 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all group">
+              <div key={i} className="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all group">
                 <span className="text-xs font-bold text-slate-400 tracking-widest uppercase mb-4 block">{work.category}</span>
                 <h4 className="text-xl font-bold mb-8 group-hover:text-blue-600 transition-colors">{work.title}</h4>
                 <div className="flex items-center justify-between mt-auto">
@@ -199,16 +199,16 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-20 border-t border-slate-100 text-center">
+      <footer className="py-20 border-t border-slate-800 text-center">
         <div className="max-w-2xl mx-auto px-6">
           <h3 className="text-2xl font-bold mb-4">Let's build a better system.</h3>
-          <p className="text-slate-500 mb-8 italic">Available for architecture consultation and design leadership roles.</p>
+          <p className="text-slate-400 mb-8 italic">Available for architecture consultation and design leadership roles.</p>
           <div className="flex items-center justify-center gap-6">
-            <button className="px-8 py-4 bg-slate-900 text-white rounded-full font-bold hover:bg-blue-600 transition-colors shadow-lg shadow-slate-900/10">
+            <button className="px-8 py-4 bg-white text-slate-900 rounded-full font-bold hover:bg-blue-600 transition-colors shadow-lg shadow-slate-900/10">
               Get in Touch
             </button>
           </div>
-          <p className="mt-16 text-slate-300 text-sm">© 2026 Ian Hooper. All rights reserved.</p>
+          <p className="mt-16 text-slate-500 text-sm">© 2026 Ian Hooper. All rights reserved.</p>
         </div>
       </footer>
     </div>
