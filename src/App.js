@@ -75,9 +75,9 @@ const CASE_STUDIES = [
 ];
 
 const OLDER_WORK = [
-  { title: "IBM Carbon Design System", category: "Design Systems", year: "2023" },
-  { title: "Sustainability Dashboard", category: "UX Design", year: "2022" },
-  { title: "Enterprise Resource Planner", category: "Architecture", year: "2021" }
+  { title: "Design Principles", category: "Design Systems", year: "2023" },
+  { title: "Core Experiences", category: "UX Design", year: "2022" },
+  { title: "Procedural VFX", category: "Architecture", year: "2021" }
 ];
 
 const ImageWithLoader = ({ prompt, title }) => {
